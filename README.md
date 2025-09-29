@@ -23,23 +23,23 @@
 ## Installation (bash or zsh)
 
 ### 1. Clone the repository
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+- git clone https://github.com/your-username/your-repo.git
+- cd your-repo
 
 ### 2. Setup Backend
-cd backend
-npm install
-npm run dev   # Starts backend server
-cd ..
+- cd backend
+- npm install
+- npm run dev   # Starts backend server
+- cd ..
+
 ### 3. Setup Frontend
-cd frontend
-npm install
-npm start     # Starts frontend dev server
+- cd frontend
+- npm install
+- npm start     # Starts frontend dev server
+
 ### 4. Open in Browser
-
-Frontend: http://localhost:3000 (or your configured port) created in frontend/.env for example: REACT_APP_API_URL=http://localhost:3001/api
-
-Backend API: http://localhost:3001 (or your configured port) in backend/.env for example: PORT=3001 NODE_ENV=development
+- Frontend: http://localhost:3000 (or your configured port) created in frontend/.env for example: REACT_APP_API_URL=http://localhost:3001/api
+- Backend API: http://localhost:3001 (or your configured port) in backend/.env for example: PORT=3001 NODE_ENV=development
 
 Folder Structure
 root/
