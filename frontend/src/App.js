@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CreditCard, FileText, Receipt, Trash2, RefreshCw, AlertCircle, CheckCircle } from 'lucide-react';
+import { CreditCard, FileText, Receipt, Trash2, AlertCircle, CheckCircle } from 'lucide-react';
 
 // API Base URL
 const API_BASE_URL = 'http://localhost:3001/api';
