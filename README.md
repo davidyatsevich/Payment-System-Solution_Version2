@@ -41,11 +41,11 @@
 - Frontend: http://localhost:3000 (or your configured port) created in frontend/.env for example: REACT_APP_API_URL=http://localhost:3001/api
 - Backend API: http://localhost:3001 (or your configured port) in backend/.env for example: PORT=3001 NODE_ENV=development
 
-Folder Structure
-root/
-├─ backend/        # Express server, API routes
-├─ frontend/       # React app, Tailwind CSS
-├─ README.md
+### Folder Structure
+- root/
+- ├─ backend/        # Express server, API routes
+- ├─ frontend/       # React app, Tailwind CSS
+- ├─ README.md
 
 
 
