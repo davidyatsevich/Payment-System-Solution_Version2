@@ -69,7 +69,7 @@ class PaymentAPI {
     return this.request('/next-payment-id');
   }
 }
-
+//==============================
 // Notification Component
 const Notification = ({ message, type, onClose }) => {
   useEffect(() => {
@@ -101,7 +101,7 @@ const PaymentSystem = () => {
   });
   const [loading, setLoading] = useState(false);
   const [notification, setNotification] = useState(null);
-
+  //==============================
   // Form states
   const [cardForm, setCardForm] = useState({
     amount: 100.00,
@@ -122,7 +122,7 @@ const PaymentSystem = () => {
     invoiceID: 1001,
     customerName: 'Default Customer'
   });
-
+  //==============================
   // Initialize system - Connect to backend
   useEffect(() => {
     const initializeSystem = async () => {
@@ -168,7 +168,7 @@ const PaymentSystem = () => {
       setLoading(false);
     }
   };
-
+  //==============================
   // Add card payment - Now uses backend models
   const addCardPayment = async () => {
     if (!cardForm.cardNumber || !cardForm.cardHolder) {
@@ -189,7 +189,7 @@ const PaymentSystem = () => {
       setLoading(false);
     }
   };
-
+  //==============================
   // Add cheque payment - Now uses backend models
   const addChequePayment = async () => {
     if (!chequeForm.bankName || !chequeForm.accountHolder) {
