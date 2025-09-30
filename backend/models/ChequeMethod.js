@@ -1,5 +1,6 @@
 const { Payment } = require('./Payment');
-
+//==============================
+// Constructor
 class ChequeMethod extends Payment {
   constructor(paymentID, amount, chequeNumber, bankName, accountHolderName) {
     super(paymentID, amount);
@@ -7,7 +8,8 @@ class ChequeMethod extends Payment {
     this.bankName = bankName;
     this.accountHolderName = accountHolderName;
   }
-
+  //==============================
+  // Getters
   getPaymentType() {
     return "Cheque";
   }
