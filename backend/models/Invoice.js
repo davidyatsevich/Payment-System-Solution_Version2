@@ -1,11 +1,13 @@
 class Invoice {
+  //==============================
+  // Constructor
   constructor(invoiceID, customerName) {
     this.invoiceID = invoiceID;
     this.customerName = customerName;
     this.listOfPayments = [];
     this.totalAmount = 0;
   }
-
+  
   addPayment(payment) {
     this.listOfPayments.push(payment);
     this.totalAmount += payment.getAmount();
@@ -20,7 +22,8 @@ class Invoice {
     }
     return false;
   }
-
+  //==============================
+  // Getters
   getInvoiceID() {
     return this.invoiceID;
   }
