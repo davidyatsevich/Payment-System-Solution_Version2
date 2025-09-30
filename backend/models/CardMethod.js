@@ -1,5 +1,6 @@
 const { Payment } = require('./Payment');
-
+//==============================
+// Constructor
 class CardMethod extends Payment {
   constructor(paymentID, amount, cardNumber, cardHolderName, expiryDate, cvv) {
     super(paymentID, amount);
@@ -8,7 +9,8 @@ class CardMethod extends Payment {
     this.expiryDate = expiryDate;
     this.cvv = cvv;
   }
-
+  //==============================
+  // Getters
   getPaymentType() {
     return "Card";
   }
