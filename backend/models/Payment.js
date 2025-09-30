@@ -1,4 +1,6 @@
 class Payment {
+  //==============================
+  // Constructor
   constructor(paymentID, amount) {
     if (this.constructor === Payment) {
       throw new Error("Cannot instantiate abstract class Payment directly");
@@ -6,7 +8,8 @@ class Payment {
     this.paymentID = paymentID;
     this.amount = amount;
   }
-
+  //==============================
+  // Getters
   getPaymentID() {
     return this.paymentID;
   }
